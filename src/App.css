@@ -30,9 +30,13 @@ li:hover {
 
 .home,
 .about,
-.projects,
+.projects {
+  min-height: 70vh;
+  text-align: center;
+}
+
 .contact {
-  min-height: 60vh;
+  min-height: 40vh;
   text-align: center;
 }
 
@@ -40,5 +44,25 @@ li:hover {
   height: 90vh;
 } */
 body {
-  padding-top: 4em;
+  padding-top: 4.5em;
+}
+
+.home {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.home .intro-text {
+  margin: 1em;
+}
+
+.intro-text {
+  font-size: 1em;
+}
+h1,
+h2,
+h4 {
+  margin: 0;
 }
