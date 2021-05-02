@@ -14,18 +14,16 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-
   padding: 1.5em;
 }
 
-li {
+.pf-header li {
   color: #fff;
-  text-decoration: none;
 }
 
-li:hover {
+header li:hover {
   cursor: pointer;
-  color: #0f1;
+  color: #ccc;
 }
 
 .home,
@@ -36,8 +34,11 @@ li:hover {
 }
 
 .contact {
-  min-height: 40vh;
+  min-height: 50vh;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /* .contact {
@@ -66,3 +67,101 @@ h2,
 h4 {
   margin: 0;
 }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_card {
+  display: grid;
+  padding: 0.5em;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 2em;
+  border: 1px solid;
+  border-radius: 1em;
+  max-width: 620px;
+  height: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects h1 {
+  margin: 1em;
+}
+
+button {
+  padding: 0.5em;
+  background-color: #333;
+  color: white;
+  margin: 1em auto;
+  border-radius: 0.25em;
+  border: none;
+  width: 12em;
+  height: 3em;
+  user-select: none;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+
+i {
+  font-size: 32px;
+  color: #333;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_list {
+  display: flex;
+  padding: 2em;
+  margin: 1em auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.home h1 {
+  font-size: 6em;
+  text-transform: capitalize;
+  text-shadow: 5px 5px #bbb;
+  font-style: italic;
+}
+
+.about {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-box {
+  margin: 0.75em auto;
+  border: 2px solid black;
+}
+
+.about-box .box-question,
+.box-answer {
+  text-align: left;
+  background-color: #bbb;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+/* RESPONSIVE */

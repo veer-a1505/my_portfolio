@@ -13,14 +13,14 @@ const Header = () => {
         <li>Home</li>
       </Link>
 
-      <Link
+      {/* <Link
         activeClass='active'
         to='about'
         spy={true}
         smooth={true}
         offset={-90}>
         <li>Who Am I</li>
-      </Link>
+      </Link> */}
 
       <Link
         activeClass='active'
