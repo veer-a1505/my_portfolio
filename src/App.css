@@ -120,6 +120,7 @@ button:hover {
   cursor: pointer;
   background-color: #fff;
   color: black;
+  outline: auto;
 }
 
 i {
