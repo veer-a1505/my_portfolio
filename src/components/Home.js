@@ -7,16 +7,18 @@ const Home = () => {
     <div className='home' id='home'>
       <div className='intro-text'>
         <h1>Hey, I'm Veera</h1>
-        <TypeWriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString(
-                "I'm an aspiring full-stack web devloper, wthout <i>CS</i> Degree."
-              )
-              .start()
-              .changeDelay(100)
-          }}
-        />
+        <h3>
+          <TypeWriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString(
+                  "I'm an aspiring full-stack web devloper, wthout <i>CS</i> Degree."
+                )
+                .start()
+                .changeDelay(100)
+            }}
+          />
+        </h3>
         <button
           onClick={() => {
             setReadMore(!readMore)

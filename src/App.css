@@ -21,16 +21,23 @@
   color: #fff;
 }
 
-header li:hover {
-  cursor: pointer;
-  color: #ccc;
-}
-
-.home,
+/* .home,
 .about,
 .projects {
   min-height: 70vh;
   text-align: center;
+} */
+
+.home,
+.projects,
+.contact {
+  height: 80vh;
+  text-align: center;
+}
+
+header li:hover {
+  cursor: pointer;
+  color: #ccc;
 }
 
 .contact {

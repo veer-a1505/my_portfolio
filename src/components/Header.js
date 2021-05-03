@@ -28,7 +28,7 @@ const Header = () => {
         spy={true}
         smooth={true}
         offset={-90}>
-        <li>projects</li>
+        <li>Projects</li>
       </Link>
 
       <Link
@@ -37,7 +37,7 @@ const Header = () => {
         spy={true}
         smooth={true}
         offset={90}>
-        <li>get in tocuh</li>
+        <li>Get in touch</li>
       </Link>
     </header>
   )
