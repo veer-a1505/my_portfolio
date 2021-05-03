@@ -12,7 +12,7 @@ const Home = () => {
             onInit={(typewriter) => {
               typewriter
                 .typeString(
-                  "I'm an aspiring full-stack web devloper, wthout <i>CS</i> Degree."
+                  "I'm an aspiring full-stack web devloper, without <i>CS</i> Degree."
                 )
                 .start()
                 .changeDelay(100)
