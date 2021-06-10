@@ -364,6 +364,10 @@ header li:hover {
   text-align: left;
 }
 
+.resume_courses ul li {
+  margin: 0.4em;
+}
+
 .resume_courses a {
   color: #fff;
   text-transform: capitalize;
@@ -463,8 +467,8 @@ header li:hover {
 
   .resume {
     width: 100%;
-    background: #fff;
-    color: #333;
+    background: #34314c;
+    color: #fff;
     text-align: center;
     margin: 10em 0 0 0;
     padding: 0;
@@ -472,17 +476,17 @@ header li:hover {
   }
 
   .head_color {
-    color: #333;
+    color: #ffc952;
   }
 
   .resume i {
-    color: #333;
+    color: #fff;
     font-size: 30px;
   }
 
   .resume_header {
-    background: #fff;
-    color: #333;
+    background: #8e8faf;
+    color: #fff;
     border-radius: 5px;
     width: 100%;
     margin: 0;
@@ -507,11 +511,7 @@ header li:hover {
 
   .resume_contact div i {
     margin: 0;
-    color: #333;
-  }
-
-  .resume_contact div li:hover {
-    cursor: pointer;
+    color: #ffc952;
   }
 
   .resume_education h2 {
@@ -551,7 +551,7 @@ header li:hover {
   }
 
   .resume_skill_card i {
-    color: #333;
+    color: #fff;
   }
 
   .resume_card_icons {
@@ -569,9 +569,6 @@ header li:hover {
     text-align: left;
     margin-left: -30px;
     margin-right: 10px;
-  }
-
-  .resume_card_icons div:not(:first-child) {
   }
 
   .resume_card_icons div a i {
