@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import './App.css'
-import Resume from './components/Resume'
+import Skills from './components/Skills'
 import Contact from './components/Contact'
 import Header from './components/Header'
 import Home from './components/Home'
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/resume' component={Resume} />
+          <Route exact path='/skills' component={Skills} />
           <Route exact path='/projects' component={Projects} />
           <Route exact path='/contact' component={Contact} />
         </Switch>

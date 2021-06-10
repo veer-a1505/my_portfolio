@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import PermContactCalendarIcon from '@material-ui/icons/PermContactCalendar'
 import AccountTreeIcon from '@material-ui/icons/AccountTree'
 import HomeIcon from '@material-ui/icons/Home'
-import DescriptionIcon from '@material-ui/icons/Description'
 
 const Header = () => {
   return (
@@ -15,8 +14,8 @@ const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to='/resume'>
-            <DescriptionIcon fontSize='large' />
+          <Link to='/skills'>
+            <i class='fas fa-tools fa-2x'></i>
           </Link>
         </li>
         <li>
