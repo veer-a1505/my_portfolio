@@ -1,97 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 /* My Portfolio */
 
-.pf-header {
-  position: fixed;
-  top: 0;
-  bottom: 10;
-  width: 100%;
-  background: #333;
-  margin-left: auto;
-  margin-right: auto;
-  color: #fff;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 1.5em;
-}
-
-.pf-header li {
-  color: #fff;
-}
-
-/* .home,
-.about,
-.projects {
-  min-height: 70vh;
-  text-align: center;
-} */
-
-.home,
-.projects,
-.contact {
-  height: 80vh;
-  text-align: center;
-}
-
-header li:hover {
-  cursor: pointer;
-  color: #ccc;
-}
-
-.contact {
-  min-height: 50vh;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-/* .contact {
-  height: 90vh;
-} */
-body {
-  padding-top: 4.5em;
-}
-
-.home {
-  display: grid;
-  margin: auto;
-  grid-template-columns: repeat(1, 1fr);
-  align-items: center;
-}
-
-.home .intro-text {
-  margin: 1em;
-}
-
-.intro-text {
-  font-size: 1em;
-}
 h1,
 h2,
 h4 {
   margin: 0;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+a {
+  text-decoration: none;
 }
 
-.project_card {
-  display: grid;
-  padding: 0.5em;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 2em;
-  border: 1px solid;
-  border-radius: 1em;
-  max-width: 620px;
-  height: auto;
+h1 {
+  font-size: 3em;
 }
 
 img {
@@ -99,8 +20,12 @@ img {
   height: auto;
 }
 
-.projects h1 {
-  margin: 1em;
+a {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
 }
 
 button {
@@ -123,9 +48,118 @@ button:hover {
   outline: auto;
 }
 
-i {
-  font-size: 32px;
-  color: #333;
+/* HEADER */
+
+.pf-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  height: 100%;
+  background: #333;
+  margin: 0 auto;
+  color: #fff;
+  list-style-type: none;
+  padding: 1.5em;
+}
+
+.pf-header ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.pf-header li {
+  align-self: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding: 0.5em;
+}
+
+header li:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+
+.home,
+.resume .projects,
+.contact {
+  height: 100vh;
+  text-align: center;
+}
+
+.contact {
+  min-height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.home .intro-text {
+  margin: 1em;
+}
+
+.intro-text {
+  font-size: 1em;
+}
+
+.aboutme {
+  max-width: 600px;
+  margin: 5em auto;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROJECTS */
+
+.project_title {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0.5em 1em 0.5em;
+  padding: 0.2em;
+  border-bottom: 4px solid;
+  border-radius: 4%;
+}
+
+.projects {
+  display: flex;
+  margin-left: 2em;
+  padding: 2em;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  justify-content: center;
+}
+
+.project_card {
+  max-width: 620px;
+  display: grid;
+  margin: 1em auto;
+  padding: 1em;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  outline-style: hidden;
+  border-radius: 1em;
+  height: auto;
+  box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  transition: all 0.5s ease;
+}
+
+.project_card:hover {
+  transform: scale(1.1);
 }
 
 .contact {
@@ -144,8 +178,21 @@ i {
   gap: 5em;
 }
 
+.contact_list div a i {
+  color: #333;
+  font-size: 3em;
+}
+
+.contact_list div {
+  transition: all 0.2s ease-out;
+}
+
+.contact_list div:hover {
+  transform: translateY(-1em);
+}
+
 .home h1 {
-  font-size: 6em;
+  font-size: 7em;
   text-transform: capitalize;
   text-shadow: 5px 5px #bbb;
   font-style: italic;
@@ -168,8 +215,406 @@ i {
   background-color: #bbb;
 }
 
-h1 {
-  font-size: 3em;
+/* RESUME */
+
+.resume {
+  width: 760px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+  margin: 5em auto 5em auto;
+  padding: 1em;
+  border: 2px solid #a3c9c7;
+  border-radius: 10px 10px;
+}
+
+.head_color {
+  color: #333;
+}
+
+.resume i {
+  color: #333;
+  font-size: 32px;
+}
+
+.resume_header {
+  background: #fff;
+  border: 2px solid #2b90d9;
+  color: #333;
+  border-radius: 5px;
+  width: 760px;
+  margin: 0.5em 0, 0.5em;
+}
+
+.resume_title h3 {
+  margin: 0;
+}
+
+.resume_contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.resume_contact div {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em auto 0.5em auto;
+  padding: 0.2em 0.2em;
+}
+
+.resume_contact div i {
+  margin: 0 0.5em 0 0.5em;
+  color: #333;
+}
+
+.resume_contact div li:hover {
+  cursor: pointer;
+}
+
+.resume_contact ul li {
+  margin: 0.5em auto 0.5em auto;
+  color: #333;
+  padding: 0.5em auto 0.5em auto;
+}
+
+.resume_edu_icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume_education h2 {
+  text-align: left;
+  margin: 0.5em auto 0.5em auto;
+  line-height: 1em;
+  text-decoration: underline;
+}
+
+.resume_education ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+}
+
+.skill_title {
+  text-align: left;
+  margin: 0.5em auto 0.5em auto;
+  line-height: 1em;
+  text-decoration: underline;
+}
+
+.resume_skill {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume_skill_card {
+  width: 390px;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume_skill_card i {
+  color: #333;
+}
+
+.resume_card_icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.resume_card_icons div {
+  margin: 0.5em;
+  padding: 0.5em;
+}
+
+.resume_card_icons div:not(:first-child) {
+  transition: transform 0.2s ease-in;
+}
+
+.resume_card_icons div:not(:first-child):hover {
+  transform: scale(1.2);
+}
+
+.resume_card_icons div a i {
+  /* border: 2px solid; */
+  margin: 0.2em;
+  /* border-radius: 25%; */
+  /* background: #fff; */
+  padding: 0.2em;
+}
+
+.resume_skill_card i {
+  font-size: 50px;
+}
+
+.resume_skill_card h4,
+.resume_skill_card li {
+  text-align: left;
+}
+
+.resume_courses {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.resume_courses a {
+  color: #333;
+  text-transform: capitalize;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.resume_courses a:hover {
+  color: #30a9de;
+  text-decoration: underline;
+}
+
+.resume_courses h2 {
+  text-decoration: underline;
 }
 
 /* RESPONSIVE */
+
+@media screen and (max-width: 600px) {
+  /* Header */
+  .pf-header {
+    position: fixed;
+    height: 20px;
+    width: 100%;
+  }
+
+  .pf-header ul {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .pf-header li {
+    text-align: center;
+    margin: 0 0;
+    padding: 0;
+    color: #fff;
+  }
+
+  /* Home */
+  .home {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    margin: 4em auto;
+    text-align: center;
+  }
+
+  .intro-text {
+    margin: 2em auto;
+  }
+
+  /* CONTACT */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact_list {
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+  }
+
+  /*PROJECTS  */
+
+  .projects {
+    margin: 0.5em 2em 0.5em 2em;
+    padding: 0.5em;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project_card {
+    margin: 0.5em 1em 0.5em 1em;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Resume */
+
+  .resume {
+    width: 100%;
+    background: #fff;
+    color: #333;
+    text-align: center;
+    margin: 10em 0 0 0;
+    padding: 0;
+    border-radius: 5px 5px;
+  }
+
+  .head_color {
+    color: #333;
+  }
+
+  .resume i {
+    color: #333;
+    font-size: 30px;
+  }
+
+  .resume_header {
+    background: #fff;
+    color: #333;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .resume_contact ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+  }
+
+  .resume_contact div {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5em auto 0.5em auto;
+    padding: 0.2em 0.2em;
+  }
+
+  .resume_contact div i {
+    margin: 0;
+    color: #333;
+  }
+
+  .resume_contact div li:hover {
+    cursor: pointer;
+  }
+
+  .resume_education h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+    line-height: 1em;
+    text-decoration: underline;
+  }
+
+  .resume_education ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+  }
+
+  .skill_title {
+    text-align: center;
+    margin: 0.5em auto 0.5em auto;
+    line-height: 1em;
+    text-decoration: underline;
+  }
+
+  .resume_skill {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume_skill_card {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .resume_skill_card i {
+    color: #333;
+  }
+
+  .resume_card_icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .resume_card_icons div {
+    margin: 0;
+    padding: 0;
+  }
+
+  .resume_card_icons div:first-child {
+    text-align: left;
+    margin-left: -30px;
+    margin-right: 10px;
+  }
+
+  .resume_card_icons div:not(:first-child) {
+  }
+
+  .resume_card_icons div a i {
+    margin: 0.3em;
+    font-size: xx-large;
+    padding: 0;
+  }
+
+  .resume_skill_card i {
+    font-size: 5px;
+  }
+
+  .resume_skill_card h4,
+  .resume_skill_card li {
+    text-align: left;
+  }
+
+  .resume_courses {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .resume_courses h2 {
+    text-align: center;
+  }
+
+  .resume_courses ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0.4em;
+  }
+
+  .resume_courses ul li {
+    text-align: left;
+    margin: 0.2em;
+  }
+
+  .resume_courses a {
+    color: #ccc;
+    text-transform: capitalize;
+    font-style: italic;
+    text-decoration: none;
+  }
+}

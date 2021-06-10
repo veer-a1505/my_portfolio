@@ -23,15 +23,30 @@ const Home = () => {
           onClick={() => {
             setReadMore(!readMore)
           }}>
-          {readMore ? 'Read less' : 'Read More'}
+          {readMore ? 'Read Less' : 'Read More'}
         </button>
 
         {readMore ? (
-          <p>
-            I have become passionate about technology such as React, Node,
-            MongoDB, Express and I do have practical exposure to those
-            technologies.
-          </p>
+          <div className='aboutme'>
+            <p>
+              Hi, I’m veeramanikandan, and am based in Chennai. I am a commerce
+              graduate. I was completed my UG in SRM arts and science college
+              back in 2017.
+            </p>
+            <p>
+              Then after a few months of job-hunting, I got an offer letter from
+              TCS(Tata Consultancy Services). After 3+ years of experience as a
+              process associate ( related to banking ), I've started to learn to
+              code, cause of the incident that happened in my project which made
+              me think about technology.
+            </p>
+            <p>
+              I started to learn the basics of the web & computer science and
+              how all concept works behind the scene. Then I started with Python
+              Programming language which very high level and user-friendly for
+              every beginner to programming.
+            </p>
+          </div>
         ) : (
           <></>
         )}

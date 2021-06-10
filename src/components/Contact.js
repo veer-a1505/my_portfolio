@@ -13,27 +13,25 @@ const Contact = () => {
 
       <div className='contact_list'>
         <div>
-          <a href='https://twitter.com/Veer_1505' target='_blank'>
-            <i className='fab fa-twitter'></i>
+          <a href='https://twitter.com/Veer_1505'>
+            <i className='fab fa-twitter twitter'></i>
           </a>
         </div>
 
         <div>
-          <a
-            href='https://www.linkedin.com/in/veera-mani-5947671b9/'
-            target='_blank'>
+          <a href='https://www.linkedin.com/in/veera-mani-5947671b9/'>
             <i className='fab fa-linkedin'></i>
           </a>
         </div>
 
         <div>
-          <a href='https://github.com/veer-a1505' target='_blank'>
+          <a href='https://github.com/veer-a1505'>
             <i className='fab fa-github-square'></i>
           </a>
         </div>
 
         <div>
-          <a href='mailto:veerasaraha@gmail.com' target='_blank'>
+          <a href='mailto:veerasaraha@gmail.com'>
             <i className='fas fa-envelope'></i>
           </a>
         </div>

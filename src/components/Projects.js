@@ -1,13 +1,14 @@
 import React from 'react'
-import imgage from './../images/budget_tracker.png'
+import budget from './../images/budget_tracker.png'
+import notes from './../images/notes_app.png'
 
 const Projects = () => {
   return (
     <div className='projects' id='project'>
-      <h1>Projects</h1>
+      <h1 className='project_title'>Projects</h1>
       <div className='project_card'>
         <div>
-          <img src={imgage} alt={'budget tracker'} />
+          <img src={budget} alt={'budget tracker'} />
         </div>
 
         <div>
@@ -22,9 +23,36 @@ const Projects = () => {
           </div>
           <div>
             <a
-              href='https://react-budget-tracker-app.herokuapp.com/'
-              target='_blank'>
-              <button ur>View Demo</button>
+              target='_blank'
+              rel='noreferrer'
+              href='https://react-budget-tracker-app.herokuapp.com/'>
+              <button>View Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className='project_card'>
+        <div>
+          <img src={notes} alt={'budget tracker'} />
+        </div>
+
+        <div>
+          <h2>Notes App</h2>
+          <p>
+            It keeps and manage notes here, it stores data using MongoDB
+            atlas.user should create an acoount to use this app and it uses
+            Nodejs for the backend microserveices such as API.
+          </p>
+          <div>
+            <h4>MongoDB, ExpressJS, ReactJS, NodeJS , Redux (MERN Stack)</h4>
+          </div>
+          <div>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://mern-keep-notes.herokuapp.com/'>
+              <button>View Demo</button>
             </a>
           </div>
         </div>
