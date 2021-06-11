@@ -7,6 +7,14 @@ h4 {
   margin: 0;
 }
 
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -22,10 +30,6 @@ img {
 
 a {
   color: #ffffff;
-}
-
-ul {
-  list-style-type: none;
 }
 
 button {
@@ -249,6 +253,14 @@ header li:hover {
   color: #333;
 }
 
+.skills_icons div {
+  transition: transform 0.2s ease-in;
+}
+
+.skills_icons div:hover {
+  transform: scale(1.2);
+}
+
 /* RESUME */
 
 .resume {
@@ -424,28 +436,28 @@ header li:hover {
   /* Header */
   .pf-header {
     position: fixed;
-    height: 20px;
+    top: 0;
     width: 100%;
+    height: 60px;
+    background: #333;
+    margin: 0 auto;
+    color: #fff;
+    padding: 0em;
   }
 
   .pf-header ul {
-    margin: 0;
-    width: 100%;
-    padding: 0;
-    list-style: none;
+    margin: 0.5em 0.5em;
+    padding: 0.2em;
     display: flex;
     flex-direction: row;
-    text-align: center;
     justify-content: space-evenly;
   }
 
   .pf-header li {
-    text-align: center;
-    margin: 0 0;
-    padding: 0;
-    color: #fff;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding: 0em;
   }
-
   /* Home */
   .home {
     width: 100%;
@@ -498,36 +510,49 @@ header li:hover {
   }
 
   /* SKILLS */
-  .skills {
-    margin: 5em auto 0 auto;
+
+  .skills,
+  .skills_icons {
+    margin: 0;
     padding: 0;
-    justify-content: center;
+  }
+
+  .skills {
+    margin: 4em 0 0 0;
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .skills_icons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .skills h2 {
     margin: 0;
     padding: 0;
-  }
-
-  .skills_icons {
-    margin: 1.5em auto 1.5em auto;
-    padding: 0;
-    justify-content: center;
-  }
-
-  .skills_icons div a {
-    margin: 0.4em auto 0.4em auto;
-    font-size: 30px;
     display: flex;
-    justify-content: space-between;
-    padding: 0.25em;
+    justify-content: center;
+    line-height: 3em;
+    text-decoration: underline;
+  }
+
+  .skills_icons a {
+    margin: 0;
+    padding: 0em;
   }
 
   .skills_icons div a i {
-    margin: 0;
-    padding: 0;
+    padding: 0.1em;
+    margin: 0.1em;
+    font-size: 50px;
+    color: #333;
   }
 
   /* Resume */
