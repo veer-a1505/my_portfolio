@@ -83,7 +83,7 @@ const Skills = (props) => {
 
       <div>
         <h2>TOOLS/OS</h2>
-        <div className='skills_icons'>
+        <div className='skills_icons other-icons'>
           <div>
             <a href='https://git-scm.com/' target='_blank' rel='noreferrer'>
               <i className='devicon-git-plain-wordmark colored'></i>
