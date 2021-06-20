@@ -1,6 +1,7 @@
 import React from 'react'
 import budget from './../images/budget_tracker.png'
 import notes from './../images/notes_app.png'
+import covidTracker from './../images/covid-tracker.png'
 
 const Projects = () => {
   return (
@@ -41,7 +42,7 @@ const Projects = () => {
           <h2>Notes App</h2>
           <p>
             It keeps and manage notes here, it stores data using MongoDB
-            atlas.user should create an acoount to use this app and it uses
+            atlas.User should create an acoount to use this app and it uses
             Nodejs for the backend microserveices such as API.
           </p>
           <div>
@@ -52,6 +53,33 @@ const Projects = () => {
               target='_blank'
               rel='noreferrer'
               href='https://mern-keep-notes.herokuapp.com/'>
+              <button>View Demo</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className='project_card'>
+        <div>
+          <img src={covidTracker} alt={'budget tracker'} />
+        </div>
+
+        <div>
+          <h2>Covid-19 Tracker</h2>
+          <p>
+            Designed and developed covid tracker using public API. Added a
+            search field to search by district and implemented a sorting
+            algorithm on every column. Stack: React.js, React Hooks, Bootstrap,
+            HTML5/CSS3.
+          </p>
+          <div>
+            <h4>React.js, React Hooks , Bootstrap.</h4>
+          </div>
+          <div>
+            <a
+              target='_blank'
+              rel='noreferrer'
+              href='https://react-covid-19-tracker-india.netlify.app/'>
               <button>View Demo</button>
             </a>
           </div>

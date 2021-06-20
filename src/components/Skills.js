@@ -121,7 +121,7 @@ const Skills = (props) => {
           </div>
         </div>
       </div>
-
+      {/* 
       <div>
         <h2>OTHERS</h2>
         <div className='skills_icons'>
@@ -141,7 +141,7 @@ const Skills = (props) => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
