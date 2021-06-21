@@ -69,8 +69,7 @@ const Projects = () => {
           <p>
             Designed and developed covid tracker using public API. Added a
             search field to search by district and implemented a sorting
-            algorithm on every column. Stack: React.js, React Hooks, Bootstrap,
-            HTML5/CSS3.
+            algorithm on every column. 
           </p>
           <div>
             <h4>React.js, React Hooks , Bootstrap.</h4>
